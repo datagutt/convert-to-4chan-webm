@@ -9,9 +9,9 @@ module.exports = function(input, output, duration, callback){
 	})
 	.withNoAudio()
 	.withVideoCodec('libvpx')
-	.withVideoBitrate('1000k')
+	.withVideoBitrate('500k')
 	.setDuration(duration || '2:00')
-	.addOption('-crf', 4)
+	.addOption('-crf', 20)
 	.toFormat('webm')
 	.on('error', function(err, stdout, stderr){
 		callback(err);
