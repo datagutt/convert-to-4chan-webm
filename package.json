@@ -1,0 +1,28 @@
+{
+  "name": "convert-to-4chan-webm",
+  "version": "0.0.1",
+  "description": "Convert a movie to a WebM file uploadable to an imageboard (like 4chan)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/datagutt/convert-to-4chan-webm.git"
+  },
+  "keywords": [
+    "imageboard",
+    "4chan",
+    "webm"
+  ],
+  "author": "datagutt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/datagutt/convert-to-4chan-webm/issues"
+  },
+  "homepage": "https://github.com/datagutt/convert-to-4chan-webm",
+  "dependencies": {
+    "fluent-ffmpeg": "~1.7.0",
+    "optimist": "~0.6.1"
+  }
+}
