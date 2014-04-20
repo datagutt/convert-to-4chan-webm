@@ -5,15 +5,15 @@ module.exports = function(input, output, duration, callback){
 		output = input.replace(path.extname(input), '.webm');
 	}
 	new FFmpeg({
-		source: file
+		source: input
 	})
 	.withNoAudio()
 	.withVideoCodec('libvpx')
-	.withVideoBitrate('1500k', true)
+	.withVideoBitrate('1000k')
 	.setDuration(duration || '2:00')
 	.addOption('-crf', 4)
 	.toFormat('webm')
-	.on('error', function(err){
+	.on('error', function(err, stdout, stderr){
 		callback(err);
 	})
 	.on('end', function(){

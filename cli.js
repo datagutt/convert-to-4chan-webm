@@ -11,7 +11,7 @@ function help() {
 	console.log(pkg.description);
 	console.log('');
 	console.log('Usage');
-	console.log('  $ convert-to-4chan-webm [-iod]');
+	console.log('  $ convert-to-4chan-webm [-hiod]');
 	console.log('  [-h | --help]');
 	console.log('  [-i | --input]');
 	console.log('  [-o | --output]');

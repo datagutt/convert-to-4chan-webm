@@ -3,6 +3,8 @@
   "version": "0.0.1",
   "description": "Convert a movie to a WebM file uploadable to an imageboard (like 4chan)",
   "main": "index.js",
+  "preferGlobal": "true",
+  "bin": {"convert-to-4chan-webm": "cli.js"},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
